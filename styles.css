@@ -2,7 +2,7 @@
 * { box-sizing:border-box; }
 html { background:var(--black); }
 body { margin:0; min-height:100vh; background:linear-gradient(135deg,#0a0906,#151009 52%,#080807); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","PingFang SC","Microsoft YaHei",sans-serif; line-height:1.65; }
-body.home { background:linear-gradient(rgba(6,5,3,.38),rgba(6,5,3,.64)),url("assets/home-hero.png?v=3") center center / cover fixed no-repeat; }
+body.home { background:linear-gradient(rgba(6,5,3,.38),rgba(6,5,3,.64)),url("assets/home-hero-en.png?v=1") center center / cover fixed no-repeat; }
 a { color:var(--gold-bright); text-underline-offset:3px; }
 .site-header, footer { width:min(1120px,calc(100% - 40px)); margin:auto; display:flex; align-items:center; justify-content:space-between; }
 .site-header { min-height:80px; border-bottom:1px solid var(--line); }
@@ -13,7 +13,7 @@ a { color:var(--gold-bright); text-underline-offset:3px; }
 .site-header nav a { color:var(--muted); font-size:.93rem; text-decoration:none; }
 .site-header nav a:hover, .site-header nav a[aria-current=page] { color:var(--gold-bright); }
 .home-main { width:min(1440px,100%); margin:auto; }
-.home-hero { min-height:700px; position:relative; display:flex; align-items:center; overflow:hidden; background:transparent; }
+.home-hero { min-height:clamp(620px,72vh,760px); position:relative; display:flex; align-items:center; overflow:hidden; background:transparent; }
 .hero-art { display:none; }
 .home-hero::before { content:""; position:absolute; inset:0; background:radial-gradient(circle at 17% 36%,rgba(168,98,31,.23),transparent 31rem); pointer-events:none; z-index:1; }
 .home-hero::after { content:""; position:absolute; inset:0; background:linear-gradient(90deg,rgba(5,4,3,.97) 0%,rgba(5,4,3,.84) 33%,rgba(5,4,3,.22) 65%,rgba(5,4,3,.09)); z-index:1; }
@@ -61,5 +61,6 @@ summary::-webkit-details-marker { display:none; }
 summary::after { content:"+"; color:var(--gold); font-size:1.45rem; font-weight:400; position:absolute; right:2px; top:-7px; }
 details[open] summary::after { content:"−"; }
 .support details p { margin:11px 0 0; max-width:650px; }
-@media (max-width:740px) { body.home { background-position:58% center; background-attachment:scroll; } .site-header { min-height:70px; } .site-header nav { gap:12px; } .home-hero { min-height:760px; align-items:flex-start; } .home-hero::after { background:linear-gradient(180deg,rgba(5,4,3,.94) 0%,rgba(5,4,3,.7) 43%,rgba(5,4,3,.04) 72%); } .home-copy { width:min(100% - 28px,1120px); padding:56px 0 0; } .home-promise { grid-template-columns:1fr; gap:20px; padding:44px 0 62px; } .home-main .home-promise { width:calc(100% - 28px); margin-top:24px; margin-bottom:30px; padding:27px 24px; } .site-header,footer { width:min(100% - 28px,1120px); } footer { align-items:flex-start; flex-direction:column; gap:12px; } .document { padding:64px 0 80px; } .policy-grid { grid-template-columns:1fr; } .policy-card { min-height:auto; } .faq-section { grid-template-columns:1fr; gap:28px; } }
+@media (max-width:740px) { body.home { background-position:62% center; background-attachment:scroll; } .site-header { min-height:70px; } .site-header nav { gap:12px; } .home-hero { min-height:760px; align-items:flex-start; } .home-hero::after { background:linear-gradient(180deg,rgba(5,4,3,.94) 0%,rgba(5,4,3,.7) 43%,rgba(5,4,3,.04) 72%); } .home-copy { width:min(100% - 28px,1120px); padding:56px 0 0; } .home-promise { grid-template-columns:1fr; gap:20px; padding:44px 0 62px; } .home-main .home-promise { width:calc(100% - 28px); margin-top:24px; margin-bottom:30px; padding:27px 24px; } .site-header,footer { width:min(100% - 28px,1120px); } footer { align-items:flex-start; flex-direction:column; gap:12px; } .document { padding:64px 0 80px; } .policy-grid { grid-template-columns:1fr; } .policy-card { min-height:auto; } .faq-section { grid-template-columns:1fr; gap:28px; } }
+@media (max-width:520px) { .site-header { width:calc(100% - 24px); } .brand { gap:7px; font-size:.96rem; } .brand img { width:31px; height:31px; } .site-header nav { gap:10px; } .site-header nav a { font-size:.8rem; } .home-copy > p:not(.eyebrow) { font-size:1.05rem; } .actions { gap:16px; flex-wrap:wrap; } .price { margin-top:22px; } }
 @media (max-width:430px) { .site-header nav { gap:9px; } .site-header nav a { font-size:.82rem; } h1 { font-size:3.15rem; } .home-hero { min-height:700px; } }
