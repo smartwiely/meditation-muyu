@@ -2,7 +2,7 @@
 * { box-sizing:border-box; }
 html { background:var(--black); }
 body { margin:0; min-height:100vh; background:linear-gradient(135deg,#0a0906,#151009 52%,#080807); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","PingFang SC","Microsoft YaHei",sans-serif; line-height:1.65; }
-body.home { background:linear-gradient(rgba(6,5,3,.38),rgba(6,5,3,.64)),url("assets/home-hero-en.png?v=1") center center / cover fixed no-repeat; }
+body.home { background:linear-gradient(rgba(6,5,3,.38),rgba(6,5,3,.64)),url("assets/home-hero-en-v1.png?v=1") center center / cover fixed no-repeat; }
 a { color:var(--gold-bright); text-underline-offset:3px; }
 .site-header, footer { width:min(1120px,calc(100% - 40px)); margin:auto; display:flex; align-items:center; justify-content:space-between; }
 .site-header { min-height:80px; border-bottom:1px solid var(--line); }
